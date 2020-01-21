@@ -28,7 +28,7 @@ custom_category_generator:
 
 - **per_page**: Default posts displayed per page. (0 = disable pagination)
 - **order_by**: Default posts order. (Order by date descending by default)
-- **custom_config**: Custom configuration per category
+- **custom_config**: Custom configuration per category. (The children items are the names of categories)
   - per_page: Posts displayed per page of the category.
   - order_by: Posts order of the category.
   - layout: Layout of the category. Could be one or more.
