@@ -2,10 +2,17 @@
   "name": "hexo-custom-category",
   "version": "1.0.0",
   "description": "Custom category generator for Hexo",
-  "main": "index.js",
+  "main": "index",
   "scripts": {
     "test": "mocha test/index.js"
   },
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ddupg/hexo-custom-category.git"
@@ -20,5 +27,20 @@
   "bugs": {
     "url": "https://github.com/ddupg/hexo-custom-category/issues"
   },
-  "homepage": "https://github.com/ddupg/hexo-custom-category#readme"
+  "homepage": "https://github.com/ddupg/hexo-custom-category#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-hexo": "^4.1.0",
+    "hexo": "^4.0.0",
+    "mocha": "^6.0.2",
+    "nyc": "^15.0.0"
+  },
+  "dependencies": {
+    "hexo-pagination": "1.0.0"
+  },
+  "engines": {
+    "node": ">=8.6.0"
+  }
 }
