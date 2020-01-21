@@ -14,13 +14,24 @@ $ npm install hexo-generator-category --save
 custom_category_generator:
   per_page: 10
   order_by: -date
-  category_layout: 
-    English: [category, index]
-    
+  layout: [my_layout]
+  custom_config:
+    English: 
+      per_page: 0
+      order_by: +date
+      layout: category_english
+    Chinese:
+      per_page: 5
+      order_by: -date
+      layout: [category_chinese, category, index]
 ```
 
-- **per_page**: Posts displayed per page. (0 = disable pagination)
-- **order_by**: Posts order. (Order by date descending by default)
+- **per_page**: Default posts displayed per page. (0 = disable pagination)
+- **order_by**: Default posts order. (Order by date descending by default)
+- **custom_config**: Custom configuration per category
+  - per_page: Posts displayed per page of the category.
+  - order_by: Posts order of the category.
+  - layout: Layout of the category. Could be one or more.
 
 ## License
 
