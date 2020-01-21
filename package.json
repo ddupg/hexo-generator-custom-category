@@ -1,0 +1,24 @@
+{
+  "name": "hexo-custom-category",
+  "version": "1.0.0",
+  "description": "Custom category generator for Hexo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddupg/hexo-custom-category.git"
+  },
+  "keywords": [
+    "hexo",
+    "generator",
+    "category"
+  ],
+  "author": "Ddupg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ddupg/hexo-custom-category/issues"
+  },
+  "homepage": "https://github.com/ddupg/hexo-custom-category#readme"
+}
